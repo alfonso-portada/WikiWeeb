@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slash_tvtitulo_margin_bottom">190dp</dimen>
+    <dimen name="slash_imageView_margin_bottom">400dp</dimen>
+    <dimen name="login_llbottonbar_margin_botton" >32dp</dimen>
+    <dimen name="login_llconten_padding">20dp</dimen>
+</resources>
