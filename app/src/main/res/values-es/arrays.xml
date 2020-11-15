@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="ArticleType">
+        <item>novela</item>
+        <item>manga</item>
+        <item>anime</item>
+    </string-array>
+</resources>

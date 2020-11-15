@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.acasema.wikiweeb.R;
+import com.acasema.wikiweeb.iu.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

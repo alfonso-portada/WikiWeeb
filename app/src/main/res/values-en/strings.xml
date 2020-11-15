@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "usuario">user</string>
+    <string name = "contrasena">password</string>
+    <string name = "tieUserName">user</string>
+    <string name = "tiePassowor">password</string>
+    <string name = "cbReadMe"> remember me </string>
+    <string name = "tvNotcuesta">I don\'t have an account</string>
+    <string name = "bttGoogle">Google</string>
+    <string name = "bttFacebook">Facebook</string>
+    <string name = "bllLogin">enter</string>
+    <string name = "tvLogin">Login</string>
+    <string name = "tvSingUp">Sign up</string>
+    <string name = "tietUser">user</string>
+    <string name ="tietEmail">email</string>
+    <string name = "tietPassword">password</string>
+    <string name = "tietRepiterPassword">repeat password</string>
+    <string name = "bttSingUp">sign up</string>
+    <string name = "bttAddReview">add review</string>
+    <string name = "bttAddArticle">add article</string>
+    <string name = "bttAbout">about</string>
+    <string name = "tvAddArticle">Add Article</string>
+    <string name = "tieTitle">Title</string>
+    <string name = "tieQuantity">amount</string>
+    <string name = "tieSynopsis">Synopsis</string>
+    <string name = "tieReview">Review</string>
+    <string name = "tvCreator">Creator: acasema (Alfonso Serrano)</string>
+    <string name = "tvAppName">Application name: WikiWeeb</string>
+    <string name = "tvVersion">App version: 0.1</string>
+    <string name = "tvGuestAccess">guest access</string>
+    <string name = "bttViewUser">View my username</string>
+    <string name = "tvCategory">"category: "</string>
+    <string name = "tvquantity">"quantity: "</string>
+    <string name = "tvSynopsis">"synopsis: "</string>
+    <string name = "tvLogoDesigner">Logo designer and design consultant: juan carlos calvo</string>
+    <string name = "tvReview">"Review: "</string>
+    <string name = "tvScore">"Score: "</string>
+    <string name="create">create</string>
+</resources>

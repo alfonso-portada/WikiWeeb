@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ArticleEmptyError">is empty</string>
+    <string name="ReviewEmptyError">is empty</string>
+    <string name="ReviewExitsError">you already criticized it</string>
+    <string name="ArticleNotExitsError">Article does not exist</string>
+    <string name="TitleEmptyError">is empty</string>
+    <string name="QuatityEmptyError">is empty</string>
+    <string name="TitleFormatError">must have more than 3 characters</string>
+    <string name="QuatityFormatError">must be positive or 0</string>
+    <string name="ArticleExitsError">already exists</string>
+    <string name="PasswordFormatError">must have a number, a letter and 8 characters</string>
+    <string name="PasswordEmptyError">is empty</string>
+    <string name="PasswordsNotEqualError">is not equal to password</string>
+    <string name="UserExitsError">already exists</string>
+    <string name="AuthenticationError">authentication error</string>
+    <string name="UserEmptyError">is empty</string>
+</resources>

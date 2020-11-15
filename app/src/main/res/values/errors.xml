@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ArticleEmptyError">esta vacio</string>
+    <string name="ReviewEmptyError">esta vacia</string>
+    <string name="ReviewExitsError">ya lo criticaste</string>
+    <string name="ArticleNotExitsError">no existe el articulo</string>
+    <string name="TitleEmptyError">esta vacio</string>
+    <string name="QuatityEmptyError">esta vacio</string>
+    <string name="TitleFormatError">el titulo tiene que tener mas de 3 caracter</string>
+    <string name="QuatityFormatError">tiene que ser positiva o 0</string>
+    <string name="ArticleExitsError">ya existe</string>
+    <string name="PasswordFormatError">tiene quye tener un numero, una letra y 8 caracteres</string>
+    <string name="PasswordEmptyError">esta vacia</string>
+    <string name="PasswordsNotEqualError">no es igual a la contraseña</string>
+    <string name="UserExitsError">ya existe</string>
+    <string name="AuthenticationError">error de autentificacion</string>
+    <string name="UserEmptyError">esta vacio</string>
+</resources>

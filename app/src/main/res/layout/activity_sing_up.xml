@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iu.SingUpActivity">
+    tools:context=".iu.signup.SignUpActivity">
 
     <TextView
         android:id="@+id/tvSingUp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilUsuario"
+        android:id="@+id/tilUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -37,23 +37,6 @@
             android:hint="@string/tietUser" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/tilPassword"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/glStard"
-        app:layout_constraintTop_toBottomOf="@+id/tilUsuario">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tieEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/tietEmail" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
@@ -64,10 +47,11 @@
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glStard"
-        app:layout_constraintTop_toBottomOf="@+id/tilEmail">
+        app:layout_constraintTop_toBottomOf="@+id/tilUser">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiePassword"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tietPassword" />
@@ -88,6 +72,7 @@
             android:id="@+id/tieRepiterPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="@string/tietRepiterPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,6 +83,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/boton_redondo"
         android:text="@string/bttSingUp"
+        android:onClick="signUp"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glStard"

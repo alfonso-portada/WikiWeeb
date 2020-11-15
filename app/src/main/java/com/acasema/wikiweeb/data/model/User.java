@@ -1,29 +1,28 @@
 package com.acasema.wikiweeb.data.model;
 
-public class User {
+import java.io.Serializable;
 
-    private int id;
+public class User implements Serializable {
+
+    public static final String TAG = "User";
+
     private String user;
-    private String email;
-    private String password;
-    private String name;
+    private int password;
 
-    public User(int id, String user, String email, String password, String name) {
-        this.id = id;
+
+    //region contructores
+    public User(String user,int password) {
         this.user = user;
-        this.email = email;
         this.password = password;
-        this.name = name;
     }
+    public User(String user,String password) {
+        this.user = user;
+        this.password = password.hashCode();
+    }
+    //endregion
 
-    //region GetSet
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
 
+    //region Get and Set
     public String getUser() {
         return user;
     }
@@ -31,26 +30,32 @@ public class User {
         this.user = user;
     }
 
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
+    public int getPassword() {
         return password;
     }
-    public void setPassword(String password) {
+    public void setPassword(int password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
     }
     //endregion
 
+
+    //region override
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        User user1 = (User) o;
+
+        if (password != user1.password) return false;
+        return user.equals(user1.user);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = user.hashCode();
+        result = 31 * result + password;
+        return result;
+    }
+    //endregion
 }

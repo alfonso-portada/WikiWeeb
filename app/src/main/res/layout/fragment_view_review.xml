@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iu.review.view.ViewReviewFragment" >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="novela de overlod"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/glR2"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/glL2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvReview"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/glR2"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/glL2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvReview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis mi est, sit amet scelerisque tortor placerat sit amet. Proin in est sit amet leo laoreet pharetra vestibulum vitae risus. Praesent rutrum lorem vel sapien vulputate dignissim. Vivamus rutrum lacus ultricies, elementum urna pharetra, vehicula ipsum. Pellentesque fringilla nibh sit amet nulla interdum suscipit. Duis in mi aliquam, volutpat ligula a, dictum sem. Donec vitae massa laoreet, tincidunt est efficitur, dictum diam. Aliquam non massa porta, facilisis neque ullamcorper, rutrum felis. Fusce purus nibh, semper a eleifend quis, iaculis a sem. Morbi at diam iaculis tellus ornare sodales sit amet eget sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam egestas finibus consequat. Suspendisse ultricies urna ipsum, non blandit nibh auctor nec. Phasellus finibus ipsum ac velit posuere, et mollis arcu vestibulum."
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/glR2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glL2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvScore"
+        app:layout_constraintStart_toStartOf="@+id/glL2"
+        app:layout_constraintTop_toBottomOf="@+id/tvReview" />
+
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="acasema"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:layout_constraintBottom_toBottomOf="@+id/tvScore"
+        app:layout_constraintEnd_toStartOf="@+id/glR2"
+        app:layout_constraintTop_toTopOf="@+id/tvScore" />
+</androidx.constraintlayout.widget.ConstraintLayout>

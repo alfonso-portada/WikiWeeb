@@ -10,15 +10,17 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 
 import com.acasema.wikiweeb.R;
 
 
 public class DashBoardFagment extends Fragment {
 
-    ImageButton ibttAbout;
-    ImageButton ibttSettings;
+    private Button bttAbout;
+    private Button bttViewUser;
+    private Button bttAddArticle;
+    private Button bttAddReview;
 
     public DashBoardFagment(){
 
@@ -29,8 +31,10 @@ public class DashBoardFagment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_dash_board, container, false);
 
-        ibttAbout = v.findViewById(R.id.ibttAbout);
-        ibttSettings = v.findViewById(R.id.ibttSetting);
+        bttAbout = v.findViewById(R.id.bttAbout);
+        bttViewUser = v.findViewById(R.id.bttViewUser);
+        bttAddArticle = v.findViewById(R.id.bttAddArticle);
+        bttAddReview = v.findViewById(R.id.bttAddReview);
 
         return v;
     }
@@ -39,27 +43,44 @@ public class DashBoardFagment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ibttAbout.setOnClickListener(new View.OnClickListener() {
+        bttAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 toAboutFragment();
             }
         });
-
-        ibttSettings.setOnClickListener(new View.OnClickListener() {
+        bttViewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toSettingsFragment();
+                toViewUserFragment();
             }
         });
+        bttAddArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toAddArticleFragment();
+            }
+        });
+        bttAddReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toAddReviewFragment();
+            }
+        });
+    }
+
+    private void toAddArticleFragment() {
+        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_addArticleFragment);
+    }
+
+    private void toViewUserFragment() {
+        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_viewUserFragment);
     }
 
     public void toAboutFragment(){
         NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_aboutFragment);
     }
-
-    public void toSettingsFragment(){
-        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_settingsFragment);
+    public void toAddReviewFragment(){
+        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_addReviewFragment);
     }
-
 }

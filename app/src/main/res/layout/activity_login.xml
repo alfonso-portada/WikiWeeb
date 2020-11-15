@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/login_llconten_padding"
-    tools:context=".iu.LoginActivity" >
+    tools:context=".iu.login.LoginActivity" >
 
     <TextView
         android:id="@+id/tvTitel"
@@ -18,10 +18,12 @@
         android:textSize="50sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tietUser" />
@@ -29,10 +31,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePassword"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tietPassword" />
@@ -56,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:onClick="validateUsaer"
+            android:onClick="toSingUpActivity"
             android:text="@string/tvNotcuesta" />
     </LinearLayout>
 
@@ -66,34 +71,28 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/boton_redondo"
-        android:onClick="toInventoryActivity"
+        android:onClick="validateUser"
         android:text="@string/bllLogin" />
-<!-- Primera opcion-->
-    <LinearLayout
-        android:id="@+id/llbottonbar"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+<View
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/bttGuestAccess"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="@dimen/login_llbottonbar_margin_botton"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-
-
-        <ImageButton
-            android:id="@+id/bttGoogle"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_goolge" />
-
-        <ImageButton
-            android:id="@+id/bttFacebook"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_facebook" />
-    </LinearLayout>
-
+        android:onClick="GuestAccess"
+        android:orientation="horizontal"
+        android:text="@string/tvGuestAccess" />
 </LinearLayout>

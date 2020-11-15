@@ -7,7 +7,72 @@
 
     <fragment
         android:id="@+id/dashBoardragment"
-        android:name="com.acasema.inventoy.iu.DashBoardFagment"
+        android:name="com.acasema.wikiweeb.iu.DashBoardFagment"
         android:label="fragment_dash_boardragment"
-        tools:layout="@layout/fragment_dash_board" />
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_dashBoardragment_to_viewUserFragment"
+            app:destination="@id/viewUserFragment" />
+        <action
+            android:id="@+id/action_dashBoardragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+        <action
+            android:id="@+id/action_dashBoardragment_to_addReviewFragment"
+            app:destination="@id/addReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.acasema.wikiweeb.iu.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/viewUserFragment"
+        android:name="com.acasema.wikiweeb.iu.ViewUserFragment"
+        android:label="fragment_view_user"
+        tools:layout="@layout/fragment_view_user" />
+    <fragment
+        android:id="@+id/addArticleFragment"
+        android:name="com.acasema.wikiweeb.iu.article.add.AddArticleFragment"
+        android:label="AddArticleFragment"
+        tools:layout="@layout/fragment_add_article">
+        <action
+            android:id="@+id/action_addArticleFragment_to_viewArticleFragment"
+            app:destination="@id/viewArticleFragment" />
+        <argument
+            android:name="newArticle"
+            app:argType="com.acasema.wikiweeb.data.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewArticleFragment"
+        android:name="com.acasema.wikiweeb.iu.article.view.ViewArticleFragment"
+        android:label="fragment_view_article"
+        tools:layout="@layout/fragment_view_article" >
+        <argument
+            android:name="newArticle"
+            app:argType="com.acasema.wikiweeb.data.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReviewFragment"
+        android:name="com.acasema.wikiweeb.iu.review.add.AddReviewFragment"
+        android:label="AddReviewFragment"
+        tools:layout="@layout/fragment_add_review">
+        <action
+            android:id="@+id/action_addReviewFragment_to_viewReviewFragment"
+            app:destination="@id/viewReviewFragment" />
+        <action
+            android:id="@+id/action_addReviewFragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewReviewFragment"
+        android:name="com.acasema.wikiweeb.iu.review.view.ViewReviewFragment"
+        android:label="fragment_view_review"
+        tools:layout="@layout/fragment_view_review" >
+        <argument
+            android:name="newReview"
+            app:argType="com.acasema.wikiweeb.data.model.Review" />
+    </fragment>
 </navigation>
