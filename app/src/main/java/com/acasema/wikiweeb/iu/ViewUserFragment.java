@@ -15,15 +15,15 @@ import com.acasema.wikiweeb.R;
 import com.acasema.wikiweeb.WikiWeebAplication;
 
 /**
- * es una prueva para ver como de ve un unario y como es usuario tiene un user estatico
+ * es una prueva para ver como usuario se puede aceder en toda la aplicacion
  */
 public class ViewUserFragment extends Fragment {
 
     private TextView tvUser;
 
-    public ViewUserFragment() {
-    }
+    public ViewUserFragment() {}
 
+    //region ciclo de vida
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_view_user, container, false);
@@ -38,4 +38,5 @@ public class ViewUserFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         tvUser.setText(((WikiWeebAplication) getActivity().getApplication()).getUser().getUser());
     }
+    //endregion
 }

@@ -14,6 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import com.acasema.wikiweeb.R;
 
+/**
+ * Fragment el cual enseña el "acerca de" de la aplicacion
+ */
 public class AboutFragment extends Fragment {
 
     private String urlMeLinkedin;
@@ -22,10 +25,9 @@ public class AboutFragment extends Fragment {
     private String urlJNKpage;
     private ImageButton imgBtJNKpage;
 
-    public AboutFragment(){
+    public AboutFragment(){}
 
-    }
-
+    //region ciclo de vida
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -57,6 +59,12 @@ public class AboutFragment extends Fragment {
             }
         });
     }
+    //endregion
+
+    /**
+     * este metodo abre una ventana a internet con la url
+     * @param url dicha url
+     */
     public void ViewInternet(String url){
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);

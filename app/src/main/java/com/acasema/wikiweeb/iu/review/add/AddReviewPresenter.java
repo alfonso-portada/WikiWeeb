@@ -1,9 +1,11 @@
 package com.acasema.wikiweeb.iu.review.add;
 
-import com.acasema.wikiweeb.data.model.Article;
 import com.acasema.wikiweeb.data.model.Review;
 import com.acasema.wikiweeb.data.model.User;
 
+/**
+ * presenter para añadir review
+ */
 public class AddReviewPresenter implements AddReviewContract.Presenter, AddReviewInteractorImpl.IAddReviewInteractor {
 
     private AddReviewContract.View view;

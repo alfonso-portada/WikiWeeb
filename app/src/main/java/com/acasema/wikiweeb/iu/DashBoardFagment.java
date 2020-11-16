@@ -14,7 +14,9 @@ import android.widget.Button;
 
 import com.acasema.wikiweeb.R;
 
-
+/**
+ * Fragment provisional que tiene los aceso al resto de los fragment
+ */
 public class DashBoardFagment extends Fragment {
 
     private Button bttAbout;
@@ -22,10 +24,9 @@ public class DashBoardFagment extends Fragment {
     private Button bttAddArticle;
     private Button bttAddReview;
 
-    public DashBoardFagment(){
+    public DashBoardFagment(){}
 
-    }
-
+    //region ciclo de vida
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -68,7 +69,10 @@ public class DashBoardFagment extends Fragment {
             }
         });
     }
+    //endregion
 
+
+    //region metodos para moverse a diferenter fragment
     private void toAddArticleFragment() {
         NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_addArticleFragment);
     }
@@ -83,4 +87,5 @@ public class DashBoardFagment extends Fragment {
     public void toAddReviewFragment(){
         NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_addReviewFragment);
     }
+    //endregion
 }

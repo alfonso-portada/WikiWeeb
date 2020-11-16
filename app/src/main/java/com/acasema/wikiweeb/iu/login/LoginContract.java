@@ -1,9 +1,12 @@
 package com.acasema.wikiweeb.iu.login;
 
-import com.acasema.wikiweeb.data.model.User;
 import com.acasema.wikiweeb.iu.base.BasePresenter;
 import com.acasema.wikiweeb.iu.user.UserView;
 
+/**
+ * contrato enter presenter y view para no pasar class clase completa y que el presenter tenga todo
+ * del fragment y dicecersa
+ */
 public interface LoginContract  {
     public interface Presenter extends BasePresenter {
         //valida el usuario para el login

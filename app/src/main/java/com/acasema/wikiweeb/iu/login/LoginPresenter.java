@@ -1,8 +1,10 @@
 package com.acasema.wikiweeb.iu.login;
 
-
 import com.acasema.wikiweeb.data.model.User;
 
+/**
+ * presenter para iniciar sesion
+ */
 public class LoginPresenter implements LoginContract.Presenter, LoginInteractorImpl.ILoginInteractor {
 
     private LoginContract.View view;

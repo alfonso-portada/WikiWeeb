@@ -1,8 +1,9 @@
 package com.acasema.wikiweeb.iu.base;
 
-import com.acasema.wikiweeb.data.model.User;
-
-public interface BaseView {
-    //este metodo continua el curso normal de la activity
-    void onSucces();
+/**
+ * interfaz base para los contratos view
+ * @param <T> clase que tiene que debolber
+ */
+public interface BaseView<T> {
+    void onSucces(T objet);//suceso normal
 }

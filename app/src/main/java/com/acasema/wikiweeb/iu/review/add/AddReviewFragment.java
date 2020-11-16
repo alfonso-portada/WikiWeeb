@@ -1,6 +1,5 @@
 package com.acasema.wikiweeb.iu.review.add;
 
-import android.icu.text.CaseMap;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -29,7 +28,9 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-
+/**
+ * Fragment  para añadir Review
+ */
 public class AddReviewFragment extends Fragment implements AddReviewContract.View {
 
     private FloatingActionButton fab;

@@ -9,10 +9,15 @@ import android.os.Handler;
 import com.acasema.wikiweeb.R;
 import com.acasema.wikiweeb.iu.login.LoginActivity;
 
+/**
+ * actividad que muestra el logo al principio
+ */
 public class SplashActivity extends AppCompatActivity {
 
     private static final long WAIT_TIME = 1000;
 
+
+    //region ciclo de la vida
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +38,11 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, WAIT_TIME);
     }
+    //endregion
 
+    /**
+     * eeste metodo cambia de actividad
+     */
     private void initlogin() {
         startActivity(new Intent(this, LoginActivity.class));
         //vamos a llamar de forma esplicita a finish para terminar la activity

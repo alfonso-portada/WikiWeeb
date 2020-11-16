@@ -2,6 +2,9 @@ package com.acasema.wikiweeb.iu.article.add;
 
 import com.acasema.wikiweeb.data.model.Article;
 
+/**
+ * presenter para añadir articulo
+ */
 public class AddArticlePresenter implements AddArticleContract.Presenter, AddArticleInteractorImpl.IAddArticleInteractor {
 
     private AddArticleContract.View view;

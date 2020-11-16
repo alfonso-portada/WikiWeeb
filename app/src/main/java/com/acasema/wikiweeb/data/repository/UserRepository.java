@@ -5,6 +5,7 @@ import com.acasema.wikiweeb.data.model.User;
 import java.util.ArrayList;
 
 /**
+ * repositorio del los usuario
  * esta clase es acesible desde punto de la eplicacion a astraves de getIntance()
  */
 public class UserRepository {

@@ -2,6 +2,9 @@ package com.acasema.wikiweeb.data.model;
 
 import java.io.Serializable;
 
+/**
+ * clase POJO de review sobre los articulos
+ */
 public class Review implements Serializable {
 
     public static final String TAG = "Review";

@@ -16,7 +16,9 @@ import com.acasema.wikiweeb.R;
 import com.acasema.wikiweeb.data.model.Article;
 import com.acasema.wikiweeb.data.model.Review;
 
-
+/**
+ * fragment no completo para ver review
+ */
 public class ViewReviewFragment extends Fragment {
 
     private TextView tvTitle;
@@ -25,7 +27,7 @@ public class ViewReviewFragment extends Fragment {
 
     private Button btnUser;
 
-
+    //region ciclo de vida
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -62,4 +64,5 @@ public class ViewReviewFragment extends Fragment {
         }
 
     }
+    //endregion
 }

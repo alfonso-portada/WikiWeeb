@@ -16,6 +16,9 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+/**
+ * Activity para iniciar sesion
+ */
 public class LoginActivity extends AppCompatActivity implements LoginContract.View {
     private TextInputEditText tieUser;
     private TextInputEditText tiePassword;

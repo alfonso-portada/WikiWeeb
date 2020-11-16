@@ -1,8 +1,9 @@
 package com.acasema.wikiweeb.iu.signup;
 
-
 import com.acasema.wikiweeb.data.model.User;
-
+/**
+ * presenter para registrarse
+ */
 public class SignUpPresenter implements SignUpContract.Presenter, SignUpInteractorImpl.ISignUpInteractor {
 
     private SignUpContract.View view;

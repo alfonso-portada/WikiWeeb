@@ -13,6 +13,9 @@ import com.acasema.wikiweeb.iu.WikiWeebActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+/**
+ * Activity para registrar usuario
+ */
 public class SignUpActivity extends AppCompatActivity implements SignUpContract.View{
     private TextInputEditText tieUser;
     private TextInputEditText tiePassword;

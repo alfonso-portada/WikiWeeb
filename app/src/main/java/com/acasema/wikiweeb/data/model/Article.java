@@ -3,6 +3,9 @@ package com.acasema.wikiweeb.data.model;
 
 import java.io.Serializable;
 
+/**
+ * Clase POJO de aticulos
+ */
 public class Article implements Serializable {
 
     public static final String TAG = "Article";
@@ -88,7 +91,7 @@ public class Article implements Serializable {
 
     @Override
     public String toString() {
-        return "title = " + title + ", type = " + type;
+        return title;
     }
     //endregion
 

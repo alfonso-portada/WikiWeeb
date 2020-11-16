@@ -2,6 +2,9 @@ package com.acasema.wikiweeb.data.model;
 
 import java.io.Serializable;
 
+/**
+ * clase POJO para manejar usuarios
+ */
 public class User implements Serializable {
 
     public static final String TAG = "User";

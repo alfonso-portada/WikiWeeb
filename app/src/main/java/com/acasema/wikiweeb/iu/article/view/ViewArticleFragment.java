@@ -14,7 +14,9 @@ import android.widget.TextView;
 import com.acasema.wikiweeb.R;
 import com.acasema.wikiweeb.data.model.Article;
 
-
+/**
+ * fragment no completo para ver articulo
+ */
 public class ViewArticleFragment extends Fragment {
 
     private Article article;
@@ -24,9 +26,9 @@ public class ViewArticleFragment extends Fragment {
     private TextView tvQuantity;
     private TextView tvSynopsis;
 
-    public ViewArticleFragment() {
-    }
+    public ViewArticleFragment() {}
 
+    //region ciclo de vida
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -52,4 +54,5 @@ public class ViewArticleFragment extends Fragment {
             tvSynopsis.setText(article.getSynopsis());
         }
     }
+    //endregion
 }
