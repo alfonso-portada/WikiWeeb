@@ -2,11 +2,12 @@ package com.acasema.wikiweeb.data.model;
 
 
 import java.io.Serializable;
+import java.util.Locale;
 
 /**
  * Clase POJO de aticulos
  */
-public class Article implements Serializable {
+public class Article implements Serializable, ModelGeneric, Comparable<Article> {
 
     public static final String TAG = "Article";
 
@@ -28,8 +29,12 @@ public class Article implements Serializable {
     public Article(String title, int type) {
         this.title = title;
         this.type =  type;
+        this.quantity = -1;
+        this.synopsis = "";
+        this.category =0;
     }
     //endregion
+
 
 
     //region getter and setter
@@ -95,4 +100,38 @@ public class Article implements Serializable {
     }
     //endregion
 
+
+    //region interfaz ModelGeneric
+    @Override
+    public void getImg() {
+
+    }
+
+    @Override
+    public String getHeading() {
+        //Locale.getDefault() == Locale.
+        return type + " de "+ title;
+    }
+
+    @Override
+    public String getLongText() {
+        if (synopsis.isEmpty())
+            return "NULL";
+        return synopsis.substring(0,100)+"...";
+    }
+
+    @Override
+    public String getSubTitle() {
+        if (quantity == -1)
+            return "NULL";
+        return quantity+"";
+    }
+    //endregion
+
+
+    //interfaz Comparable
+    @Override
+    public int compareTo(Article o) {
+        return this.title.compareTo(o.title);
+    }
 }

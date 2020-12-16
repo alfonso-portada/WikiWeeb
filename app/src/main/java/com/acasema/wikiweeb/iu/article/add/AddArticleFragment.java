@@ -71,8 +71,9 @@ public class AddArticleFragment extends Fragment implements AddArticleContract.V
         super.onViewCreated(view, savedInstanceState);
 
         Bundle bundle = getArguments();
-        if(bundle != null){
-            Article article = (Article) bundle.getSerializable(Article.TAG);
+        Article article = (Article) bundle.getSerializable(Article.TAG);
+
+        if(article != null){
             tieTitle.setText(article.getTitle());
             spinnerTypeArticle.setSelection(article.getType());
 

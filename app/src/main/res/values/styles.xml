@@ -5,8 +5,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@android:color/black</item>
     </style>
     <style name="NoActionBar" parent="AppTheme">
         <item name="windowNoTitle">true</item>
     </style>
+¡
 </resources>

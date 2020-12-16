@@ -36,4 +36,7 @@
     <string name="tvReview">Review: </string>
     <string name="tvScore">Puntuacion: </string>
     <string name="create">crear</string>
+    <string name="tvLoading">cargando datos</string>
+    <string name="bttListArticho">listado de articulo</string>
+    <string name="sortByName">ordenar por nombre</string>
 </resources>

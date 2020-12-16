@@ -36,4 +36,10 @@
     <string name="tvReview">Review: </string>
     <string name="tvScore">Puntuacion: </string>
     <string name="create">crear</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nodata">no hay datos</string>
+    <string name="tvLoading">cargando datos</string>
+    <string name="bttListArticho">listado de articulo</string>
+    <string name="sortByName">ordenar por nombre</string>
 </resources>

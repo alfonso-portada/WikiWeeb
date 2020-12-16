@@ -69,15 +69,23 @@
         app:layout_constraintStart_toStartOf="@+id/glL"
         app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
 
-    <TextView
-        android:id="@+id/tvSynopsis"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis mi est, sit amet scelerisque tortor placerat sit amet. Proin in est sit amet leo laoreet pharetra vestibulum vitae risus. Praesent rutrum lorem vel sapien vulputate dignissim. Vivamus rutrum lacus ultricies, elementum urna pharetra, vehicula ipsum. Pellentesque fringilla nibh sit amet nulla interdum suscipit. Duis in mi aliquam, volutpat ligula a, dictum sem. Donec vitae massa laoreet, tincidunt est efficitur, dictum diam. Aliquam non massa porta, facilisis neque ullamcorper, rutrum felis. Fusce purus nibh, semper a eleifend quis, iaculis a sem. Morbi at diam iaculis tellus ornare sodales sit amet eget sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam egestas finibus consequat. Suspendisse ultricies urna ipsum, non blandit nibh auctor nec. Phasellus finibus ipsum ac velit posuere, et mollis arcu vestibulum."
-        android:textSize="18sp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/glR"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/glL"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <TextView
+            android:id="@+id/tvSynopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis mi est, sit amet scelerisque tortor placerat sit amet. Proin in est sit amet leo laoreet pharetra vestibulum vitae risus. Praesent rutrum lorem vel sapien vulputate dignissim. Vivamus rutrum lacus ultricies, elementum urna pharetra, vehicula ipsum. Pellentesque fringilla nibh sit amet nulla interdum suscipit. Duis in mi aliquam, volutpat ligula a, dictum sem. Donec vitae massa laoreet, tincidunt est efficitur, dictum diam. Aliquam non massa porta, facilisis neque ullamcorper, rutrum felis. Fusce purus nibh, semper a eleifend quis, iaculis a sem. Morbi at diam iaculis tellus ornare sodales sit amet eget sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam egestas finibus consequat. Suspendisse ultricies urna ipsum, non blandit nibh auctor nec. Phasellus finibus ipsum ac velit posuere, et mollis arcu vestibulum."
+            android:textSize="18sp" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

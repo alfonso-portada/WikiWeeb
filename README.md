@@ -1,44 +1,32 @@
 # WikiWeeb
-## Login y SignUp
+## cosas modificadas
 
-* falta addTextChangedListener del usuario, contraseña (y repetir contraseña)
+* about pado de un fragment a una activity para poder acecer a el desde cualquier parte troncal de la aplicacion
 
-## Articulo:
+* se saco about del grafo de navegacion
 
-* Clase POJO
+## cosas echas
 
-* ver (ViewArticleFragment)
+* recicleReview para article
 
-** falta la explicacion del recicleReview
+* adapter para article
 
-* añadrir (AddArticleFragment)
+* una unica interfaz para todos los model parapoder poner un solo recicleReview o un solo adapter
 
-** falta addTextChangedListener del título, cantidad, sinopsis
+* una forma para ordenar article
 
-## Review:
+* un menu basico para toolbar con about en la activity principal
 
-* Clase POJO
+* añadir un subMenu en un fragment en especifico
 
-* ver (ViewReviewFragment)
+## cosas por implementar
 
-** falta enlaces al usuario
+* un floatinButton para añadir un articulo si estas mirando articulos y si estas mirando un articulo en concreto añadir una review
 
-** falta enlaces al artículo
+* una forma de navegacion
 
-* añadrir (AddReviewFragment)
+* implentar una fecha de cracion para poder ordenar por recientes (documentacion, base de datos, clases modelo/POJO)
 
-** falta puntuar la review
+* pensar una forma de poder modificar articulos y gastionar estas modificaciones
 
-## About:
-
-* completo por ahora (actualizar con nueva información)
-
-## WikiWeebAplication:
-
-* guarda el usuario usado para crear review
-
-** se guarda tanto como en Login y SignUp.
-
-_falta comentar casi todo porque soy un vago. Voy a ver si lo puedo
-hacerlo y subirlo el lunes antes de la hora, por eso he puesto el enlace a
-github, por lo que mira la hora del último commit_
+* mas cosas que faltan no relacionedas con la entrega

@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bttAddReview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bttListArticle"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
@@ -24,33 +24,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bttAddReview"
-        app:layout_constraintBottom_toTopOf="@+id/bttAbout"
+        app:layout_constraintBottom_toTopOf="@+id/bttViewUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttAddArticle" />
 
     <Button
-        android:id="@+id/bttAbout"
+        android:id="@+id/bttViewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bttAbout"
+        android:text="@string/bttViewUser"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bttViewUser"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bttAddReview" />
 
     <Button
-        android:id="@+id/bttViewUser"
+        android:id="@+id/bttListArticle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:text="@string/bttViewUser"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/bttListArticho"
+        app:layout_constraintEnd_toStartOf="@+id/bttAddArticle"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/bttAbout"
-        app:layout_constraintTop_toTopOf="@+id/bttAbout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bttAddArticle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

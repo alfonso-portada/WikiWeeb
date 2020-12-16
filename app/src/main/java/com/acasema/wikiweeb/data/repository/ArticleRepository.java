@@ -26,12 +26,10 @@ public class ArticleRepository {
     }
 
     private void initialice() {
-        articles.add(new Article("add",0));
-        articles.add(new Article("add",1));
-        articles.add(new Article("app",2));
-        articles.add(new Article("att",0));
-        articles.add(new Article("att",1));
-        articles.add(new Article("att",2));
+        articles.add(new Article("overlord",0, 2, "14", ArticleRepositorySinopsis.overlord));
+        articles.add(new Article("overlord",2, 2, "39", ArticleRepositorySinopsis.overlord));
+        articles.add(new Article("Mahouka koukou no rettousei",2, 1, "37", ArticleRepositorySinopsis.Mahouka));
+        //articles.add(new Article("",0, 0, "", ""));
     }
 
     /**

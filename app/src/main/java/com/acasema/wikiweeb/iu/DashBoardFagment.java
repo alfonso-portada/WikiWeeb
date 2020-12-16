@@ -19,10 +19,10 @@ import com.acasema.wikiweeb.R;
  */
 public class DashBoardFagment extends Fragment {
 
-    private Button bttAbout;
     private Button bttViewUser;
     private Button bttAddArticle;
     private Button bttAddReview;
+    private Button bttListArticle;
 
     public DashBoardFagment(){}
 
@@ -30,26 +30,19 @@ public class DashBoardFagment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_dash_board, container, false);
-
-        bttAbout = v.findViewById(R.id.bttAbout);
-        bttViewUser = v.findViewById(R.id.bttViewUser);
-        bttAddArticle = v.findViewById(R.id.bttAddArticle);
-        bttAddReview = v.findViewById(R.id.bttAddReview);
-
-        return v;
+        return inflater.inflate(R.layout.fragment_dash_board, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        bttAbout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toAboutFragment();
-            }
-        });
+        bttViewUser = view.findViewById(R.id.bttViewUser);
+        bttAddArticle = view.findViewById(R.id.bttAddArticle);
+        bttAddReview = view.findViewById(R.id.bttAddReview);
+        bttListArticle = view.findViewById(R.id.bttListArticle);
+
+
         bttViewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +61,13 @@ public class DashBoardFagment extends Fragment {
                 toAddReviewFragment();
             }
         });
+        bttListArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toListArticleFragment();
+            }
+        });
+
     }
     //endregion
 
@@ -81,11 +81,11 @@ public class DashBoardFagment extends Fragment {
         NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_viewUserFragment);
     }
 
-    public void toAboutFragment(){
-        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_aboutFragment);
-    }
     public void toAddReviewFragment(){
         NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_addReviewFragment);
+    }
+    public void toListArticleFragment(){
+        NavHostFragment.findNavController(this).navigate(R.id.action_dashBoardragment_to_listArticleFragment);
     }
     //endregion
 }

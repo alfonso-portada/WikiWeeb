@@ -11,9 +11,6 @@
         android:label="fragment_dash_boardragment"
         tools:layout="@layout/fragment_dash_board" >
         <action
-            android:id="@+id/action_dashBoardragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-        <action
             android:id="@+id/action_dashBoardragment_to_viewUserFragment"
             app:destination="@id/viewUserFragment" />
         <action
@@ -22,12 +19,10 @@
         <action
             android:id="@+id/action_dashBoardragment_to_addReviewFragment"
             app:destination="@id/addReviewFragment" />
+        <action
+            android:id="@+id/action_dashBoardragment_to_listArticleFragment"
+            app:destination="@id/listArticleFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/aboutFragment"
-        android:name="com.acasema.wikiweeb.iu.AboutFragment"
-        android:label="AboutFragment"
-        tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/viewUserFragment"
         android:name="com.acasema.wikiweeb.iu.ViewUserFragment"
@@ -74,5 +69,14 @@
         <argument
             android:name="newReview"
             app:argType="com.acasema.wikiweeb.data.model.Review" />
+    </fragment>
+    <fragment
+        android:id="@+id/listArticleFragment"
+        android:name="com.acasema.wikiweeb.iu.article.list.ListArticleFragment"
+        android:label="fragment_list_article"
+        tools:layout="@layout/fragment_list_article" >
+        <action
+            android:id="@+id/action_listArticleFragment_to_viewArticleFragment"
+            app:destination="@id/viewArticleFragment" />
     </fragment>
 </navigation>

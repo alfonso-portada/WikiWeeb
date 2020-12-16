@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * clase POJO de review sobre los articulos
  */
-public class Review implements Serializable {
+public class Review implements Serializable, ModelGeneric {
 
     public static final String TAG = "Review";
 
@@ -71,6 +71,30 @@ public class Review implements Serializable {
         int result = user.hashCode();
         result = 31 * result + article.hashCode();
         return result;
+    }
+    //endregion
+
+
+    //region interfaz ModelGeneric
+    @Override
+    public void getImg() {
+
+    }
+
+    @Override
+    public String getHeading() {
+        //Locale.getDefault() == Locale.
+        return article.getHeading()+ " de "+ user.getUser();
+    }
+
+    @Override
+    public String getLongText() {
+        return review.substring(0,100)+"...";
+    }
+
+    @Override
+    public String getSubTitle() {
+        return score+"";
     }
     //endregion
 }

@@ -4,4 +4,5 @@
     <dimen name="slash_imageView_margin_bottom">400dp</dimen>
     <dimen name="login_llbottonbar_margin_botton" >32dp</dimen>
     <dimen name="login_llconten_padding">20dp</dimen>
+    <dimen name="letter_icon_size">100dp</dimen>
 </resources>

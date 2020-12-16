@@ -3,17 +3,26 @@
     package="com.acasema.wikiweeb">
 
     <application
+        android:name=".WikiWeebAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".WikiWeebAplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".iu.WikiWeebActivity" android:theme="@style/NoActionBar"/>
-        <activity android:name=".iu.login.LoginActivity" android:theme="@style/NoActionBar" />
-        <activity android:name=".iu.signup.SignUpActivity" android:theme="@style/NoActionBar" />
-        <activity android:name=".iu.SplashActivity" android:theme="@style/NoActionBar">
+        <activity android:name=".iu.AboutActivity"/>
+        <activity
+            android:name=".iu.WikiWeebActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".iu.login.LoginActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".iu.signup.SignUpActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".iu.SplashActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
