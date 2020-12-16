@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.acasema.wikiweeb.R;
@@ -147,6 +148,7 @@ public class ListArticleFragment extends Fragment implements ListArticleContract
     @Override
     public void onClickArticle(Article article) {
 
+        Toast.makeText(getContext(), article.toString(), Toast.LENGTH_LONG).show();
         Bundle bundle =new Bundle();
         bundle.putSerializable(Article.TAG, article);
         NavHostFragment.findNavController(this).navigate(R.id.action_listArticleFragment_to_viewArticleFragment, bundle);

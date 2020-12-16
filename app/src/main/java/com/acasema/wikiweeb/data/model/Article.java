@@ -96,7 +96,7 @@ public class Article implements Serializable, ModelGeneric, Comparable<Article> 
 
     @Override
     public String toString() {
-        return title;
+        return type +" "+ title;
     }
     //endregion
 
